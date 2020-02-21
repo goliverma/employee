@@ -28,7 +28,10 @@ namespace employee
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                DeveloperExceptionPageOptions developerExceptionPage = new DeveloperExceptionPageOptions{
+                    SourceCodeLineCount=20
+                }; 
+                app.UseDeveloperExceptionPage(developerExceptionPage);
             }
             app.UseStaticFiles();
             app.UseRouting();
