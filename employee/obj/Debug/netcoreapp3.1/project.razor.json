@@ -20504,6 +20504,11 @@
       "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Home/Details.cshtml",
       "TargetPath": "Views/Home/Details.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

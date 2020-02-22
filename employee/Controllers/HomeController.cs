@@ -13,10 +13,10 @@ namespace employee.Controllers
         {
             this.employeeRepository = employeeRepository;
         }
-        public string Index()
+        public IActionResult Index()
         {
-            string st= employeeRepository.GetEmployee(1).Name;
-            return st;
+            var model=employeeRepository.GetAllEmployee();
+            return View(model);
         }
         public IActionResult Details()
         {

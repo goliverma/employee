@@ -1,0 +1,35 @@
+@using employee.Models.Data 
+@model IEnumerable<employee.Models.Data.Employee>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Department
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach(Employee emp in Model)
+                {
+                    <tr>
+                        <td>@emp.Name</td>
+                        <td>@emp.Email</td>
+                        <td>@emp.Department</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
