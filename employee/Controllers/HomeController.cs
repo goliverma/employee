@@ -17,10 +17,10 @@ namespace employee.Controllers
             string st= employeeRepository.GetEmployee(1).Name;
             return st;
         }
-        public JsonResult Details()
+        public IActionResult Details()
         {
             Employee employee = employeeRepository.GetEmployee(1);
-            return Json(employee);
+            return View(employee);
         }
     }
 }
