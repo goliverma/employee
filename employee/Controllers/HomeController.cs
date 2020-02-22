@@ -1,5 +1,6 @@
 using employee.Models.Data;
 using employee.Models.Interfaces;
+using employee.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace employee.Controllers
@@ -19,8 +20,11 @@ namespace employee.Controllers
         }
         public IActionResult Details()
         {
-            Employee employee = employeeRepository.GetEmployee(1);
-            return View(employee);
+            HomeDetailsViewModels hdvm=new HomeDetailsViewModels(){
+                Employee=employeeRepository.GetEmployee(1),
+                PageTitle="Details"
+            };
+            return View(hdvm);
         }
     }
 }

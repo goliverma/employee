@@ -1,20 +1,20 @@
-@model employee.Models.Data.Employee;
+@model employee.ViewModels.HomeDetailsViewModels;
 @{
     ViewData["Title"] = "Details";
 }
 
 <h1>
-    Details View    
+    @Model.PageTitle
 </h1>
 
 <div>
     <h2>
-        Name: @Model.Name
+        Name: @Model.Employee.Name
     </h2>
     <h2>
-        Email: @Model.Email
+        Email: @Model.Employee.Email
     </h2>
     <h2>
-        Department: @Model.Department
+        Department: @Model.Employee.Department
     </h2>
 </div>
