@@ -1,3 +1,4 @@
+using employee.Models.Data;
 using employee.Models.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,6 +16,11 @@ namespace employee.Controllers
         {
             string st= employeeRepository.GetEmployee(1).Name;
             return st;
+        }
+        public JsonResult Details()
+        {
+            Employee employee = employeeRepository.GetEmployee(1);
+            return Json(employee);
         }
     }
 }
