@@ -20501,6 +20501,11 @@
   "RootNamespace": "employee",
   "Documents": [
     {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/Views/_ViewStart.cshtml",
+      "TargetPath": "Views/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Home/Details.cshtml",
       "TargetPath": "Views/Home/Details.cshtml",
       "FileKind": "mvc"
@@ -20508,6 +20513,11 @@
     {
       "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Home/Index.cshtml",
       "TargetPath": "Views/Home/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],
