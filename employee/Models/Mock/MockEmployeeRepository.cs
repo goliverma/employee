@@ -17,6 +17,9 @@ namespace employee.Models.Mock
                 new Employee(){Id=4, Name="Yashu", Department="Payrol", Email="yashu@gmail.com"}
             };
         }
+
+        public IEnumerable<Employee> GetAllEmployee() => employeelist;
+
         public Employee GetEmployee(int id) => employeelist.FirstOrDefault(e => e.Id == id);
     }
 }
