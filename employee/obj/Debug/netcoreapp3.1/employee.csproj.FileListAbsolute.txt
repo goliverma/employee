@@ -28,3 +28,4 @@
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.Views.pdb
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.csproj.CopyComplete
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/bin/Debug/netcoreapp3.1/dotnet-watch.dll
