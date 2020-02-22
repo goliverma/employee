@@ -16,3 +16,14 @@
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.RazorTargetAssemblyInfo.cache
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.dll
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.pdb
+/home/goli/Desktop/code/employee/employee/bin/Debug/netcoreapp3.1/employee.Views.dll
+/home/goli/Desktop/code/employee/employee/bin/Debug/netcoreapp3.1/employee.Views.pdb
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.RazorAssemblyInfo.cache
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.RazorAssemblyInfo.cs
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.TagHelpers.input.cache
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.TagHelpers.output.cache
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.RazorCoreGenerate.cache
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Home/Details.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.RazorTargetAssemblyInfo.cs
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.Views.pdb
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/employee.csproj.CopyComplete

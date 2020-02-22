@@ -20499,6 +20499,12 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "employee",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Home/Details.cshtml",
+      "TargetPath": "Views/Home/Details.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
