@@ -13,7 +13,7 @@ namespace employee.Controllers
         }
         public string Index()
         {
-            string st="gaurav";
+            string st= employeeRepository.GetEmployee(1).Name;
             return st;
         }
     }
