@@ -12,7 +12,29 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "/home/goli/Desktop/code/employee/employee/Views/_ViewImports.cshtml"
+using employee.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "/home/goli/Desktop/code/employee/employee/Views/_ViewImports.cshtml"
+using employee.Models.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "/home/goli/Desktop/code/employee/employee/Views/_ViewImports.cshtml"
+using employee.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6b970df4e5dc5ceab381e29986e6db1427c28733", @"/Views/Shared/_Layout.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0cd07af799ec3941fe432ee88ea2ceccdb203860", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -41,7 +63,7 @@ namespace AspNetCore
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\n<html>\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b970df4e5dc5ceab381e29986e6db1427c287332670", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b970df4e5dc5ceab381e29986e6db1427c287333337", async() => {
                 WriteLiteral("\n        <meta name=\"viewport\" content=\"width=device-width\"/>\n        <title>");
 #nullable restore
 #line 5 "/home/goli/Desktop/code/employee/employee/Views/Shared/_Layout.cshtml"
@@ -63,7 +85,7 @@ namespace AspNetCore
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b970df4e5dc5ceab381e29986e6db1427c287333927", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b970df4e5dc5ceab381e29986e6db1427c287334594", async() => {
                 WriteLiteral("\n        <div>\n            ");
 #nullable restore
 #line 9 "/home/goli/Desktop/code/employee/employee/Views/Shared/_Layout.cshtml"

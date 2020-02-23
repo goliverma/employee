@@ -31,3 +31,4 @@
 /home/goli/Desktop/code/employee/employee/bin/Debug/netcoreapp3.1/dotnet-watch.dll
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
