@@ -9,7 +9,7 @@
           "popper.js": "[1.16.0, 2.0.0)"
         }
       },
-      "jQuery/3.0.0": {
+      "jQuery/3.4.1": {
         "type": "package"
       },
       "Microsoft.DotNet.Watcher.Tools/2.0.2": {
@@ -276,26 +276,26 @@
         "contentFiles/Scripts/bootstrap.min.js.map"
       ]
     },
-    "jQuery/3.0.0": {
-      "sha512": "xFfntV19HzCtKdJWOp/XT9PUY3SslokTDDLFJZdBug36j1XVhw1+vPQ/n7Gd5y+jdpesn5B1m1yn1qIUq57jlA==",
+    "jQuery/3.4.1": {
+      "sha512": "vDD5O2nuVN2rF0rTASFSJNM5ef50niEP5HsXDQyXPPZH1rBaAaLtCutHG5wvXOPmrQw+MEZHOcOk9kYmdnL/Xw==",
       "type": "package",
-      "path": "jquery/3.0.0",
+      "path": "jquery/3.4.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Content/Scripts/jquery-3.0.0-vsdoc.js",
-        "Content/Scripts/jquery-3.0.0.js",
-        "Content/Scripts/jquery-3.0.0.min.js",
-        "Content/Scripts/jquery-3.0.0.min.map",
-        "Content/Scripts/jquery-3.0.0.slim.js",
-        "Content/Scripts/jquery-3.0.0.slim.min.js",
-        "Content/Scripts/jquery-3.0.0.slim.min.map",
+        "Content/Scripts/jquery-3.4.1-vsdoc.js",
+        "Content/Scripts/jquery-3.4.1.js",
+        "Content/Scripts/jquery-3.4.1.min.js",
+        "Content/Scripts/jquery-3.4.1.min.map",
+        "Content/Scripts/jquery-3.4.1.slim.js",
+        "Content/Scripts/jquery-3.4.1.slim.min.js",
+        "Content/Scripts/jquery-3.4.1.slim.min.map",
         "Tools/common.ps1",
         "Tools/install.ps1",
-        "Tools/jquery-3.0.0.intellisense.js",
+        "Tools/jquery-3.4.1.intellisense.js",
         "Tools/uninstall.ps1",
-        "jquery.3.0.0.nupkg.sha512",
+        "jquery.3.4.1.nupkg.sha512",
         "jquery.nuspec"
       ]
     },
@@ -891,7 +891,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.DotNet.Watcher.Tools >= 2.0.2",
-      "bootstrap >= 4.4.1"
+      "bootstrap >= 4.4.1",
+      "jQuery >= 3.4.1"
     ]
   },
   "packageFolders": {
@@ -936,6 +937,10 @@
           "bootstrap": {
             "target": "Package",
             "version": "[4.4.1, )"
+          },
+          "jQuery": {
+            "target": "Package",
+            "version": "[3.4.1, )"
           }
         },
         "imports": [
