@@ -20511,6 +20511,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/Views/Shared/EmployeeList.cshtml",
+      "TargetPath": "Views/Shared/EmployeeList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/goli/Desktop/code/employee/employee/Views/_ViewImports.cshtml",
       "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"
