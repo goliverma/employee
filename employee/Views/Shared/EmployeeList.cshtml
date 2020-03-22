@@ -11,13 +11,13 @@
     <img class="card-img-top" src="/Images/images.jpeg"/>
     <div class="card-footer text-center">
         <form method="POST" asp-controller="Home" asp-action="Details" asp-route-Id="@Model.Id">
-            <button type="submit" class="btn btn-primary">View</button>
+            <button type="submit" class="btn btn-primary"><i class="far fa-eye">View</i></button>
         </form>
         <form method="POST" asp-controller="Home" asp-action="" asp-route-Id="@Model.Id">
-            <button type="submit" class="btn btn-primary">Edit</button>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-user-edit">Edit</i></button>
         </form>
         <form method="POST" asp-controller="Home" asp-action="" asp-route-Id="@Model.Id">
-            <button type="submit" class="btn btn-danger">Delete</button>
+            <button type="submit" class="btn btn-danger"><i class="fas fa-user-minus">Delete</i></button>
         </form>
     </div>
 </div>
