@@ -18,13 +18,22 @@ namespace employee.Controllers
             var model=employeeRepository.GetAllEmployee();
             return View(model);
         }
-        public IActionResult Details(int Id)
+        public IActionResult Details(int? Id)
         {
             HomeDetailsViewModels hdvm=new HomeDetailsViewModels(){
-                Employee=employeeRepository.GetEmployee(Id),
+                Employee=employeeRepository.GetEmployee(Id ?? 1),
                 PageTitle="Details"
             };
             return View(hdvm);
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Employee model)
+        {
+            return Ok();
         }
     }
 }

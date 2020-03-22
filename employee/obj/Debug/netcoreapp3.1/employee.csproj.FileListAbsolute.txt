@@ -71,3 +71,4 @@
 /home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/employee.dll
 /home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/employee.pdb
 /home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/employee.genruntimeconfig.cache
+/home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Home/Create.cshtml.g.cs
