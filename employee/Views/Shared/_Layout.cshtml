@@ -2,7 +2,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width"/>
-        <link href="/content/Content/bootstrap.css" rel="stylesheet" />
+        <environment include="Development">
+            <link href="/content/Content/bootstrap.css" rel="stylesheet" />
+            <link href="/site.css" rel="stylesheet" />
+        </environment>
         <title>@ViewBag.Title</title>
     </head>
     <body>
