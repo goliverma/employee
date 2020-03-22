@@ -6,16 +6,33 @@
             <link href="/content/Content/bootstrap.css" rel="stylesheet" />
             <link href="/site.css" rel="stylesheet" />
             <link href="/fontawesome/css/all.css" rel="stylesheet" />
+            <script src="/Scripts/jquery-3.4.1.js"></script>
         </environment>
         <title>@ViewBag.Title</title>
     </head>
     <body>
         <div class="container">
-            @RenderBody()
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" asp-action="Index" asp-controller="Home">Employee</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navcollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Index" asp-controller="Home">&nbsp;<i class="fas fa-indent">&nbsp;List</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Create" asp-controller="Home">&nbsp;<i class="far fa-plus-square">&nbsp;Create</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            @RenderBody()        
+            @if(IsSectionDefined("Scripts"))
+            {
+                @RenderSection("Scripts", required: true);
+            }
         </div>
-        @if(IsSectionDefined("Scripts"))
-        {
-            @RenderSection("Scripts", required: true);
-        }
     </body>
 </html>
