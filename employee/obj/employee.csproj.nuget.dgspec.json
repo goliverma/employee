@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/goli/Desktop/code/employee/employee/employee.csproj": {}
+    "/home/goli/Desktop/code/employee/employee/employee/employee.csproj": {}
   },
   "projects": {
-    "/home/goli/Desktop/code/employee/employee/employee.csproj": {
+    "/home/goli/Desktop/code/employee/employee/employee/employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/goli/Desktop/code/employee/employee/employee.csproj",
+        "projectUniqueName": "/home/goli/Desktop/code/employee/employee/employee/employee.csproj",
         "projectName": "employee",
-        "projectPath": "/home/goli/Desktop/code/employee/employee/employee.csproj",
+        "projectPath": "/home/goli/Desktop/code/employee/employee/employee/employee.csproj",
         "packagesPath": "/home/goli/.nuget/packages/",
-        "outputPath": "/home/goli/Desktop/code/employee/employee/obj/",
+        "outputPath": "/home/goli/Desktop/code/employee/employee/employee/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/goli/.nuget/NuGet/NuGet.Config"
@@ -40,6 +40,10 @@
               "target": "Package",
               "version": "[2.0.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "bootstrap": {
               "target": "Package",
               "version": "[4.4.1, )"
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
         }
       }
     }
