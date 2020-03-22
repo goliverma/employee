@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "7O8eWZAXWcCzPf7coaR3FLM4z6WQtv53DWkcl7jiamUhHx77t7jDGF7N6zVIjNmEA1SZnF9VowZ9kIvkgV0ASw==",
+  "success": true,
+  "projectFilePath": "/home/goli/Desktop/code/employee/employee/employee/employee.csproj",
+  "expectedPackageFiles": [
+    "/home/goli/.nuget/packages/bootstrap/4.4.1/bootstrap.4.4.1.nupkg.sha512",
+    "/home/goli/.nuget/packages/jquery/3.4.1/jquery.3.4.1.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.dotnet.watcher.tools/2.0.2/microsoft.dotnet.watcher.tools.2.0.2.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.netcore.app/2.0.7/microsoft.netcore.app.2.0.7.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.netcore.dotnetapphost/2.0.7/microsoft.netcore.dotnetapphost.2.0.7.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.0.7/microsoft.netcore.dotnethostpolicy.2.0.7.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.netcore.dotnethostresolver/2.0.7/microsoft.netcore.dotnethostresolver.2.0.7.nupkg.sha512",
+    "/home/goli/.nuget/packages/microsoft.netcore.platforms/2.0.2/microsoft.netcore.platforms.2.0.2.nupkg.sha512",
+    "/home/goli/.nuget/packages/netstandard.library/2.0.1/netstandard.library.2.0.1.nupkg.sha512",
+    "/home/goli/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/goli/.nuget/packages/popper.js/1.16.0/popper.js.1.16.0.nupkg.sha512"
+  ],
+  "logs": []
+}
