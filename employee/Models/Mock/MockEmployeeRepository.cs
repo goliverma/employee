@@ -18,8 +18,19 @@ namespace employee.Models.Mock
             };
         }
 
+        public Employee Add(Employee employee)
+        {
+            employee.Id=employeelist.Max(e => e.Id)+1;
+            employeelist.Add(employee);
+            return employee;
+        }
+
         public IEnumerable<Employee> GetAllEmployee() => employeelist;
 
-        public Employee GetEmployee(int id) => employeelist.FirstOrDefault(e => e.Id == id);
+        public Employee GetEmployee(int id)
+        {
+            var employee=employeelist.FirstOrDefault(e=>e.Id==id);
+            return employee;
+        }
     }
 }
