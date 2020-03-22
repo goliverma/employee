@@ -10,8 +10,14 @@
     </div>
     <img class="card-img-top" src="/Images/images.jpeg"/>
     <div class="card-footer text-center">
-        <a href="" class="btn btn-primary">View</a>
-        <a href="" class="btn btn-primary">Edit</a>
-        <a href="" class="btn btn-danger">Delete</a>
+        <form method="POST" asp-controller="Home" asp-action="Details" asp-route-Id="@Model.Id">
+            <button type="submit" class="btn btn-primary">View</button>
+        </form>
+        <form method="POST" asp-controller="Home" asp-action="" asp-route-Id="@Model.Id">
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </form>
+        <form method="POST" asp-controller="Home" asp-action="" asp-route-Id="@Model.Id">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
     </div>
 </div>

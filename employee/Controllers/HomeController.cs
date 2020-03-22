@@ -18,10 +18,10 @@ namespace employee.Controllers
             var model=employeeRepository.GetAllEmployee();
             return View(model);
         }
-        public IActionResult Details()
+        public IActionResult Details(int Id)
         {
             HomeDetailsViewModels hdvm=new HomeDetailsViewModels(){
-                Employee=employeeRepository.GetEmployee(1),
+                Employee=employeeRepository.GetEmployee(Id),
                 PageTitle="Details"
             };
             return View(hdvm);
