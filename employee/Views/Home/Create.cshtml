@@ -8,18 +8,23 @@
         <label asp-for="Name" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
             <input asp-for="Name" class="form-control" placeholder="Name"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
     </div>
     <div class="form-group row">
         <label asp-for="Email" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
             <input asp-for="Email" class="form-control"placeholder="Email"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
     </div>
     <div class="form-group row">
         <label asp-for="Department" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()" class="form-control"></select>
+            <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()" class="form-control">
+                <option value="">Please Select</option>
+            </select>
+            <span asp-validation-for="Department" class="text-danger"></span>
         </div>
     </div>
     <div class="form-group row">
