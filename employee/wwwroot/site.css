@@ -1,8 +1,7 @@
-.btn{
-    width: auto;
-    margin: 1px;
-}
 .imagethumbnail{
     height: 200px;
     width: auto;
+}
+.btn{
+    width: 75px;
 }
