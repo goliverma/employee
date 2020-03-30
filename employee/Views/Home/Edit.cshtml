@@ -1,0 +1,62 @@
+@model EmployeeEditViewModel
+@{
+    ViewBag.Title="Update Employee Detail";
+    var path= "~/Images/" + Model.ExistingPhotoPath;
+}
+
+<form enctype="multipart/form-data" class="mt-3" asp-controller="Home" asp-action="Edit" method="POST">
+<input hidden asp-for="Id"/>
+<input hidden asp-for="ExistingPhotoPath" />
+    <div class="form-group row">
+        <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Name" class="form-control" placeholder="Name"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Email" class="form-control"placeholder="Email"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Department" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()" class="form-control">
+                <option value="">Please Select</option>
+            </select>
+            <span asp-validation-for="Department" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Photo" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <div class="custom-file">
+                <input asp-for="Photo" class="form-control custom-file-input"/>
+                <label class="custom-file-label">Click here to change Photo</label>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <img src="@path" asp-append-version="true" class="imagethumbnail" />
+    </div>
+    <div class="form-group row m-2">
+        <button type="submit" class="btn btn-primary form-control">
+            <i class="fas fa-pencil-alt">&nbsp;Update</i>
+        </button>
+        &nbsp;
+        <a asp-controller="Home" asp-action="Index" class="btn btn-danger"><i class="fas fa-broom">&nbsp;Clear</i></a>
+    </div>
+    @section Scripts {
+        <script>
+            $(document).ready(function(){
+                $('.custom-file-input').on("change", function(){
+                    var filename=$(this).val().split("\\").pop();
+                    $(this).next('.custom-file-label').html(filename);
+                });
+            });
+        </script>
+    }
+</form>

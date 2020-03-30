@@ -24,7 +24,7 @@
                 </div>
                 <div class="card-footer text-center">
                     <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Back</a>
-                    <a href="" class="btn btn-primary">Edit</a>
+                    <a asp-controller="Home" asp-action="Edit" asp-route-id="@Model.Employee.Id" class="btn btn-primary"><i class="fas fa-pencil-alt">&nbsp;Edit</i></a>
                     <a href="" class="btn btn-danger">Delete</a>
                 </div>
                 </div>

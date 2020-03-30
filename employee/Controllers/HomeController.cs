@@ -40,19 +40,12 @@ namespace employee.Controllers
             return View();
         }
         [HttpPost]
-        [System.Obsolete]
+        [Obsolete]
         public async Task<IActionResult> Create(EmployeeCreateViewModel model)
         {
             if(ModelState.IsValid)
             {
-                string uniqueFileName = null;
-                if(model.Photo!=null)
-                {
-                    string uploadfolder= Path.Combine(hostingEnvironment.WebRootPath,"Images");
-                    uniqueFileName = Guid.NewGuid().ToString()+"_"+model.Photo.FileName;
-                    string filepath= Path.Combine(uploadfolder,uniqueFileName);
-                    await model.Photo.CopyToAsync(new FileStream(filepath, FileMode.Create));
-                }
+                string uniqueFileName= await ProcessUploadFile(model);
                 var data=new EmployeeCreateViewModel{
                     Name=model.Name,
                     Email=model.Email,
@@ -60,9 +53,63 @@ namespace employee.Controllers
                     PhotoPath = uniqueFileName
                 };
                 await employeeRepository.Add(data);
-                return RedirectToAction("details",new {id = data.Id});
+                return RedirectToAction(nameof(Details),new {id = data.Id});
             }
             return View();
+        }
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var data = await employeeRepository.GetEmployee(id);
+            var editModel=new EmployeeEditViewModel{
+                Id=data.Id,
+                Name=data.Name,
+                Email=data.Email,
+                Department=data.Department,
+                ExistingPhotoPath=data.PhotoPath
+            };
+            return View(editModel);
+        }
+        [HttpPost]
+        [Obsolete]
+        public async Task<IActionResult> Edit(EmployeeEditViewModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                var employee = await employeeRepository.GetEmployee(model.Id);
+                employee.Name=model.Name;
+                employee.Department=model.Department;
+                employee.Email=model.Email;
+                if(model.Photo != null)
+                {
+                    if(model.ExistingPhotoPath != null)
+                    {
+                        string filepath= Path.Combine(hostingEnvironment.WebRootPath,"Images",model.ExistingPhotoPath);
+                        System.IO.File.Delete(filepath);
+                    }
+                    employee.PhotoPath = await ProcessUploadFile(model);
+                }
+                await employeeRepository.Update(employee);
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
+
+        [Obsolete]
+        private async Task<string> ProcessUploadFile(EmployeeCreateViewModel model)
+        {
+            string uniqueFileName = null;
+            if(model.Photo!=null)
+            {
+                string uploadfolder= Path.Combine(hostingEnvironment.WebRootPath,"Images");
+                uniqueFileName = Guid.NewGuid().ToString()+"_"+model.Photo.FileName;
+                string filepath= Path.Combine(uploadfolder,uniqueFileName);
+                await Task.Run(() => 
+                {
+                    model.Photo.CopyToAsync(new FileStream(filepath, FileMode.Create));
+                });
+            }
+            return uniqueFileName;
         }
     }
 }

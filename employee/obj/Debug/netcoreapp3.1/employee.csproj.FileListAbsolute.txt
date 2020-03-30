@@ -99,3 +99,4 @@
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Home/Edit.cshtml.g.cs
