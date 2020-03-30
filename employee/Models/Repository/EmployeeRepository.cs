@@ -21,6 +21,17 @@ namespace employee.Models.Repository
             return employee;
         }
 
+        public async Task<Employee> Delete(int id)
+        {
+            var employee= await GetEmployee(id);
+            if(employee != null)
+            {
+                context.Remove(employee);
+                await context.SaveChangesAsync();
+            }
+            return employee;
+        }
+
         public async Task<IEnumerable<Employee>> GetAllEmployee()
         {
             return await context.Employees.ToListAsync();
@@ -29,6 +40,17 @@ namespace employee.Models.Repository
         public async Task<Employee> GetEmployee(int id)
         {
             return await context.Employees.FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<Employee> Update(Employee employeechange)
+        {
+            var employee= context.Employees.Attach(employeechange);
+            if(employee != null)
+            {
+                employee.State = EntityState.Modified;
+                await context.SaveChangesAsync();
+            }
+            return employeechange;
         }
     }
 }

@@ -1,4 +1,5 @@
 using employee.Models.Data;
+using employee.Models.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace employee.Models
@@ -10,5 +11,10 @@ namespace employee.Models
             
         }
         public DbSet<Employee> Employees { get; set; }
+
+        // protected override void OnModelCreating(ModelBuilder modelBuilder)
+        // {
+        //     modelBuilder.Seed();
+        // }
     }
 }

@@ -11,5 +11,6 @@ namespace employee.Models.Data
         public Dept? Department { get; set; }
         [Required]
         public string Email { get; set; }
+        public string PhotoPath { get; set; }
     }
 }

@@ -9,7 +9,7 @@ using employee.Models;
 namespace employee.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200330081441_initial")]
+    [Migration("20200330093546_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,9 @@ namespace employee.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoPath")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -3,7 +3,7 @@ namespace employee.Models
 {
     public enum Dept
     {
-        None,
+        Sales,
         HR,
         IT,
         Payroll
