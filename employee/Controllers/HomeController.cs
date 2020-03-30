@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using employee.Models.Data;
 using employee.Models.Interfaces;
 using employee.ViewModels;
@@ -13,15 +14,15 @@ namespace employee.Controllers
         {
             this.employeeRepository = employeeRepository;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var model=employeeRepository.GetAllEmployee();
+            var model = await employeeRepository.GetAllEmployee();
             return View(model);
         }
-        public IActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             HomeDetailsViewModels hdvm=new HomeDetailsViewModels(){
-                Employee=employeeRepository.GetEmployee(id ?? 1),
+                Employee = await employeeRepository.GetEmployee(id ?? 1),
                 PageTitle="Details"
             };
             return View(hdvm);
@@ -32,11 +33,11 @@ namespace employee.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Employee model)
+        public async Task<IActionResult> Create(Employee model)
         {
             if(ModelState.IsValid)
             {
-                Employee newemployee=employeeRepository.Add(model);
+                Employee newemployee= await employeeRepository.Add(model);
                 return RedirectToAction("details",new {id = newemployee.Id});
             }
             return View();
