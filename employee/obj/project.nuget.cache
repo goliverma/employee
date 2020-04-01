@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4iq/sHCkqQL2z99w8XzzaNaEyCw7Kfe83Uv5M+zbGrSmIT3yEGL5DhDJXbo5tLnv0QjXXqhEw63zS9LGtnpBYg==",
+  "dgSpecHash": "ufLXOAtPXZe5MIyw3k3PORoG20CMTix22jjHhyC+f7me26DX3NQWSPf9zndkQXHZSKfb5likH7ag0CVXTBGlYg==",
   "success": true,
   "projectFilePath": "/home/goli/Desktop/code/employee/employee/employee/employee.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,9 @@
     "/home/goli/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/home/goli/.nuget/packages/netstandard.library/2.0.1/netstandard.library.2.0.1.nupkg.sha512",
     "/home/goli/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/goli/.nuget/packages/nlog/4.6.8/nlog.4.6.8.nupkg.sha512",
+    "/home/goli/.nuget/packages/nlog.extensions.logging/1.6.2/nlog.extensions.logging.1.6.2.nupkg.sha512",
+    "/home/goli/.nuget/packages/nlog.web.aspnetcore/4.9.1/nlog.web.aspnetcore.4.9.1.nupkg.sha512",
     "/home/goli/.nuget/packages/popper.js/1.16.0/popper.js.1.16.0.nupkg.sha512",
     "/home/goli/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/home/goli/.nuget/packages/runtime.native.system.data.sqlclient.sni/4.4.0/runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

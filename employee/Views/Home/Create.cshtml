@@ -41,6 +41,14 @@
             <i class="far fa-plus-square">&nbsp;Create</i>
         </button>
     </div>
+    @* @if(Model.progressvalu == 0)
+    {
+        <div class="form-group row">
+            <div class="progress">
+                <div class="progress-bar" style="width: @Model.progressvalu"></div>
+            </div>
+        </div>
+    } *@
     @section Scripts {
         <script>
             $(document).ready(function(){

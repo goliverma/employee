@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/employee/Views/Shared/NotFound.cshtml",
+      "TargetPath": "Views\\Shared\\NotFound.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/goli/Desktop/code/employee/employee/employee/Views/Home/Edit.cshtml",
       "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"
@@ -20538,6 +20543,11 @@
     {
       "FilePath": "/home/goli/Desktop/code/employee/employee/employee/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/employee/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20558,6 +20568,11 @@
     {
       "FilePath": "/home/goli/Desktop/code/employee/employee/employee/Views/Shared/EmployeeList.cshtml",
       "TargetPath": "Views\\Shared\\EmployeeList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/goli/Desktop/code/employee/employee/employee/Views/Home/EmployeeNotFound.cshtml",
+      "TargetPath": "Views\\Home\\EmployeeNotFound.cshtml",
       "FileKind": "mvc"
     }
   ],

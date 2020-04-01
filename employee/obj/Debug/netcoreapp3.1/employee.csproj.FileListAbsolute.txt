@@ -100,3 +100,10 @@
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Home/Edit.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Home/EmployeeNotFound.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Shared/NotFound.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/nlog.config
+/home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/NLog.dll
+/home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/NLog.Extensions.Logging.dll
+/home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/NLog.Web.AspNetCore.dll

@@ -40,7 +40,14 @@ namespace employee
                     SourceCodeLineCount=20
                 }; 
                 app.UseDeveloperExceptionPage(developerExceptionPage);
+
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
+            else
+            {
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            }
+            app.UseExceptionHandler("/Error");
             app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(endpoints =>

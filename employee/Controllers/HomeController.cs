@@ -28,8 +28,14 @@ namespace employee.Controllers
         }
         public async Task<IActionResult> Details(int? id)
         {
+            var employee= await employeeRepository.GetEmployee(id.Value);
+            if(employee == null)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id.Value);
+            }
             HomeDetailsViewModels hdvm=new HomeDetailsViewModels(){
-                Employee = await employeeRepository.GetEmployee(id ?? 1),
+                Employee = employee,
                 PageTitle="Details"
             };
             return View(hdvm);
