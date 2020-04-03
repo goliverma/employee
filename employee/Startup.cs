@@ -30,7 +30,10 @@ namespace employee
                 Configuration.GetConnectionString("Default")));
             services.AddControllersWithViews().AddXmlSerializerFormatters();
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddIdentity<IdentityUser, IdentityRole>(options => {
+                options.Password.RequiredLength=6;
+                options.Password.RequireNonAlphanumeric=false;
+            }).AddEntityFrameworkStores<AppDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

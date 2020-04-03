@@ -10,7 +10,7 @@ using employee.Models;
 namespace employee.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200403092649_identity")]
+    [Migration("20200403173857_identity")]
     partial class identity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
