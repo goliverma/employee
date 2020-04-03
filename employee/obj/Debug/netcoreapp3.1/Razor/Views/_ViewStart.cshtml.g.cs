@@ -33,8 +33,15 @@ using employee.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/home/goli/Desktop/code/employee/employee/employee/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3696947bf889c31da809b473b061087a478efe4b", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0a950edb8f6e49afcb1b9bde284c7daaeb547a9f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"833b27e26bcf02066cc2bbd038525c8561500c77", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
