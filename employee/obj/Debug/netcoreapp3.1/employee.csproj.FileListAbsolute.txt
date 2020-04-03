@@ -123,3 +123,4 @@
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
 /home/goli/Desktop/code/employee/employee/employee/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+/home/goli/Desktop/code/employee/employee/employee/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs
