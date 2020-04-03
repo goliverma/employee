@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-preview.1.20124.5, )"
+            },
             "Microsoft.DotNet.Watcher.Tools": {
               "target": "Package",
               "version": "[2.0.2, )"

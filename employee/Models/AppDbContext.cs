@@ -1,10 +1,11 @@
 using employee.Models.Data;
 using employee.Models.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace employee.Models
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
         {
@@ -14,6 +15,7 @@ namespace employee.Models
 
         // protected override void OnModelCreating(ModelBuilder modelBuilder)
         // {
+        //     base.OnModelCreating(modelBuilder);
         //     modelBuilder.Seed();
         // }
     }
