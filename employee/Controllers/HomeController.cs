@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using employee.Models.Data;
 using employee.Models.Interfaces;
 using employee.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
@@ -99,6 +100,18 @@ namespace employee.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View();
+        }
+        [HttpPost]
+        [Obsolete]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            var result= await employeeRepository.GetEmployee(id.Value);
+            var filepath= Path.Combine(hostingEnvironment.WebRootPath, "Images",result.PhotoPath);
+            System.IO.File.Delete(filepath);
+            await Task.Run(()=> {
+                employeeRepository.Delete(result.Id);
+            });
+            return RedirectToAction("Index","Home");
         }
 
         [Obsolete]

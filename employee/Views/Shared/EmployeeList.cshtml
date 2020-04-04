@@ -1,5 +1,5 @@
 @model Employee
-
+@inject SignInManager<IdentityUser> signInManager;
 @{
     var photopath= "~/Images/"+@Model.PhotoPath;
 }
@@ -13,11 +13,14 @@
         <form method="POST" asp-controller="Home" asp-action="Details" asp-route-Id="@Model.Id">
             <button type="submit" class="btn btn-primary m-1"><i class="far fa-eye">View</i></button>
         </form>
-        <form method="GET" asp-controller="Home" asp-action="Edit" asp-route-Id="@Model.Id">
-            <button type="submit" class="btn btn-primary m-1"><i class="fas fa-user-edit">Edit</i></button>
-        </form>
-        <form method="POST" asp-controller="Home" asp-action="" asp-route-Id="@Model.Id">
-            <button type="submit" class="btn btn-danger m-1"><i class="fas fa-user-minus">Delete</i></button>
-        </form>
+        @if(signInManager.IsSignedIn(User))
+        {
+            <form method="GET" asp-controller="Home" asp-action="Edit" asp-route-Id="@Model.Id">
+                <button type="submit" class="btn btn-primary m-1"><i class="fas fa-user-edit">Edit</i></button>
+            </form>
+            <form method="POST" asp-controller="Home" asp-action="Delete" asp-route-Id="@Model.Id">
+                <button type="submit" class="btn btn-danger m-1"><i class="fas fa-user-minus">Delete</i></button>
+            </form>
+        }
     </div>
 </div>
