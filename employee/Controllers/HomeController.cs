@@ -22,11 +22,13 @@ namespace employee.Controllers
             this.hostingEnvironment=hostingEnvironment;
             this.employeeRepository = employeeRepository;
         }
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var model = await employeeRepository.GetAllEmployee();
             return View(model);
         }
+        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             var employee= await employeeRepository.GetEmployee(id.Value);
